@@ -12,22 +12,19 @@ ________________________________________________________
 
 ## Android ​ ​ Environment ​ ​ Setup
 
-Android​ ​Build​ ​Tools:​ ​26.0.
-Targeted​ ​SDK:​ ​ 26
-Java​ ​Version:​ ​ 7
-Minimum​ ​Device​ ​Support:​ ​API​ ​ 22
+* Android​ ​Build​ ​Tools:​ ​26.0.
+* Targeted​ ​SDK:​ ​ 26
+* Java​ ​Version:​ ​ 7
+* Minimum​ ​Device​ ​Support:​ ​API​ ​ 22
+
+## Building Using Android Studio
+
+Use​ ​the​ ​Build​ ​Variants​ ​window​ ​in​ ​Android​ ​Studio​ ​to​ ​choose​ ​which​ ​version​ ​of​ ​the​ ​app
+you​ ​want​ ​to​ ​install,​ ​or​ ​alternatively​ ​choose​ ​one​ ​of​ ​the​ ​following​ ​tasks​ ​from​ ​the
 
 ## Command ​ ​ Line ​ ​ Interface ​ ​ To ​ ​ Test ​ ​ And ​ ​ Run
 
-Building
-
-## Use​ ​the​ ​Build​ ​Variants​ ​window​ ​in​ ​Android​ ​Studio​ ​to​ ​choose​ ​which​ ​version​ ​of​ ​the​ ​app
-
-## you​ ​want​ ​to​ ​install,​ ​or​ ​alternatively​ ​choose​ ​one​ ​of​ ​the​ ​following​ ​tasks​ ​from​ ​the
-
-## command​ ​line:
-
-## Unit​ ​Test
+# Unit​ ​Test
 
 ./gradlew​ ​testProdReleaseUnitTest
 Run​​ ​(Note:​ ​Ensure​ ​emulator​ ​is​ ​up​ ​and​ ​running​)
