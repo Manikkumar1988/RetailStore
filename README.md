@@ -1,38 +1,40 @@
 # Table ​ ​ of ​ ​ contents:
 
-● Environment​ ​setup
-● Running​ ​Unit​ ​test
-● Design​ ​Brief
-○ App​ ​Architecture​ ​Diagram
-○ Object​ ​Oriented​ ​Design
-● External​ ​Libraries
-● Naming​ ​Convention
-● Code​ ​Snippets
+* Environment​ ​setup
+* Running​ ​Unit​ ​test
+* Design​ ​Brief
+* App​ ​Architecture​ ​Diagram
+* Object​ ​Oriented​ ​Design
+* External​ ​Libraries
+* Naming​ ​Convention
+* Code​ ​Snippets
 ________________________________________________________
 
 ## Android ​ ​ Environment ​ ​ Setup
 
-Android​ ​Build​ ​Tools:​ ​26.0.
-Targeted​ ​SDK:​ ​ 26
-Java​ ​Version:​ ​ 7
-Minimum​ ​Device​ ​Support:​ ​API​ ​ 22
+* Android​ ​Build​ ​Tools:​ ​26.0.
+* Targeted​ ​SDK:​ ​ 26
+* Java​ ​Version:​ ​ 7
+* Minimum​ ​Device​ ​Support:​ ​API​ ​ 22
 
 ## Command ​ ​ Line ​ ​ Interface ​ ​ To ​ ​ Test ​ ​ And ​ ​ Run
 
 Building
 
-## Use​ ​the​ ​Build​ ​Variants​ ​window​ ​in​ ​Android​ ​Studio​ ​to​ ​choose​ ​which​ ​version​ ​of​ ​the​ ​app
-
-## you​ ​want​ ​to​ ​install,​ ​or​ ​alternatively​ ​choose​ ​one​ ​of​ ​the​ ​following​ ​tasks​ ​from​ ​the
+Use​ ​the​ ​Build​ ​Variants​ ​window​ ​in​ ​Android​ ​Studio​ ​to​ ​choose​ ​which​ ​version​ ​of​ ​the​ ​app
+you​ ​want​ ​to​ ​install,​ ​or​ ​alternatively​ ​choose​ ​one​ ​of​ ​the​ ​following​ ​tasks​ ​from​ ​the
 
 ## command​ ​line:
 
-## Unit​ ​Test
+Unit​ ​Test
 
 ./gradlew​ ​testProdReleaseUnitTest
 Run​​ ​(Note:​ ​Ensure​ ​emulator​ ​is​ ​up​ ​and​ ​running​)
 ./gradlew​ ​installProdDebug
+<img src="art/unit_test_execution.gif" alt="phone image" width="200px" />
 
+# What does this app do?
+<img src="art/app_demo.gif" alt="phone image" width="200px" />
 
 ## Object ​ ​ Oriented ​ ​ Design
 
@@ -62,17 +64,17 @@ Reasoning:
 ## External ​ ​ Libraries
 
 ```
-● Butterknife​ ​-​ ​reduces​ ​dev​ ​time,​ ​code​ ​readability
+* Butterknife​ ​-​ ​reduces​ ​dev​ ​time,​ ​code​ ​readability
 ```
 ## Naming ​ ​ Convention
 
-● File​ ​name:​ ​<domain_name>_<usage>_<andriod_component_name>
-● Variable​ ​name:​ ​<domain_name>_<framework_or_component_name>
+* File​ ​name:​ ​<domain_name>_<usage>_<andriod_component_name>
+* Variable​ ​name:​ ​<domain_name>_<framework_or_component_name>
 **What** ​ ​ **Next?**
-● Unit​ ​testing​ ​domain​ ​entity
-● Automated​ ​UI​ ​tests
-● Unit​ ​testing​ ​Local​ ​Database
-● Clarification​ ​on​ ​Error​ ​screen​ ​behaviour
+* Unit​ ​testing​ ​domain​ ​entity
+* Automated​ ​UI​ ​tests
+* Unit​ ​testing​ ​Local​ ​Database
+* Clarification​ ​on​ ​Error​ ​screen​ ​behaviour
 
 
 ## Code ​ ​ Snippets
