@@ -12,26 +12,27 @@ ________________________________________________________
 
 ## Android ​ ​ Environment ​ ​ Setup
 
-* Android​ ​Build​ ​Tools:​ ​26.0.
-* Targeted​ ​SDK:​ ​ 26
-* Java​ ​Version:​ ​ 7
-* Minimum​ ​Device​ ​Support:​ ​API​ ​ 22
+Android​ ​Build​ ​Tools:​ ​26.0.
+Targeted​ ​SDK:​ ​ 26
+Java​ ​Version:​ ​ 7
+Minimum​ ​Device​ ​Support:​ ​API​ ​ 22
 
 ## Command ​ ​ Line ​ ​ Interface ​ ​ To ​ ​ Test ​ ​ And ​ ​ Run
 
 Building
 
-Use​ ​the​ ​Build​ ​Variants​ ​window​ ​in​ ​Android​ ​Studio​ ​to​ ​choose​ ​which​ ​version​ ​of​ ​the​ ​app
-you​ ​want​ ​to​ ​install,​ ​or​ ​alternatively​ ​choose​ ​one​ ​of​ ​the​ ​following​ ​tasks​ ​from​ ​the
+## Use​ ​the​ ​Build​ ​Variants​ ​window​ ​in​ ​Android​ ​Studio​ ​to​ ​choose​ ​which​ ​version​ ​of​ ​the​ ​app
+
+## you​ ​want​ ​to​ ​install,​ ​or​ ​alternatively​ ​choose​ ​one​ ​of​ ​the​ ​following​ ​tasks​ ​from​ ​the
 
 ## command​ ​line:
 
-Unit​ ​Test
+## Unit​ ​Test
 
 ./gradlew​ ​testProdReleaseUnitTest
 Run​​ ​(Note:​ ​Ensure​ ​emulator​ ​is​ ​up​ ​and​ ​running​)
 ./gradlew​ ​installProdDebug
-<img src="art/unit_test_execution.gif" alt="phone image" width="200px" />
+<img src="art/unit_test_execution.gif" alt="phone image" width="500px" />
 
 # What does this app do?
 <img src="art/app_demo.gif" alt="phone image" width="200px" />
@@ -54,6 +55,7 @@ change​ ​because​ ​it​ ​will​ ​all​ ​be​ ​performed​ �
 
 
 ## Application ​ ​ Architecture ​ ​ Diagram
+<img src="art/class_diagram.png" alt="phone image" width="500px" />
 
 Reasoning:
 
@@ -79,13 +81,14 @@ Reasoning:
 
 ## Code ​ ​ Snippets
 
-1. Passing​ ​Event​ ​Triggered​ ​from​ ​View​ ​to​ ​ViewModel:
-2. Passing​ ​Event​ ​Triggered​ ​from​ ​background​ ​Operation​ ​to​ ​View:
-3. Passing​ ​Event​ ​from​ ​Fragment​ ​to​ ​Activity​ ​or​ ​Vice​ ​Versa:
+1. Passing​ ​Event​ ​Triggered​ ​from​ ​View​ ​to​ ​ViewModel
+2. Passing​ ​Event​ ​Triggered​ ​from​ ​background​ ​Operation​ ​to​ ​View
+3. Passing​ ​Event​ ​from​ ​Fragment​ ​to​ ​Activity​ ​or​ ​Vice​ ​Versa
 
-## are​ ​performed​ ​view​ ​ObservableList​ ​or​ ​MutableLiveData​ ​which​ ​are​ ​​ observable ​​ ​pattern.
+are​ ​performed​ ​view​ ​ObservableList​ ​or​ ​MutableLiveData​ ​which​ ​are​ ​​ observable ​​ ​pattern.
 
 **ViewModel.java**
+```
 public​ ​final​ ​ObservableList<Product>​ ​items​ ​=​ ​new​ ​ObservableArrayList<>();
 ....
 ....
@@ -93,9 +96,12 @@ public​ ​void​ ​getProducts(new​ ​ProductsDatasource.LoadProductsCal
 ​ ​​ ​​ ​​ ​​ ​​ ​@Override​ ​public​ ​void​ ​onProductsLoaded(List<Product>​ ​products)​ ​{
 ​ ​​ ​​ ​​ ​​ ​​ ​​ ​​ ​items.addAll(products);
 ​ ​}
+```
+
 **Fragment.java**
+```
 ​ ​​ ​​ ​ViewModel.getItems().observe(this,​ ​events​ ​->​ ​{
 ​ ​​ ​​ ​​ ​​ ​​ ​​ ​​ ​​ ​​ ​​ ​​ ​Log.d(TAG,​ ​"Events​ ​Changed:"​ ​+​ ​events);
 ​ ​​ ​​ ​​ ​​ ​​ ​​ ​​ ​​ ​​ ​​ ​​ ​//”events”​ ​-​ ​hold​ ​all​ ​data,​ ​if​ ​populated
 ​ ​​ ​​ ​​ ​​ ​​ ​​ ​​ ​});
-
+```
