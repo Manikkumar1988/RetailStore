@@ -35,6 +35,7 @@ Run​​ ​(Note:​ ​Ensure​ ​emulator​ ​is​ ​up​ ​and​ �
 <img src="art/app_demo.gif" alt="phone image" width="200px" />
 
 ## Object ​ ​ Oriented ​ ​ Design
+<img src="art/class_diagram.png" alt="phone image" width="500px" />
 
 Relationship:
 
@@ -52,7 +53,7 @@ change​ ​because​ ​it​ ​will​ ​all​ ​be​ ​performed​ �
 
 
 ## Application ​ ​ Architecture ​ ​ Diagram
-<img src="art/class_diagram.png" alt="phone image" width="500px" />
+<img src="art/app_architecture.png" alt="phone image" width="500px" />
 
 Reasoning:
 
